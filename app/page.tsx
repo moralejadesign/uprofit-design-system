@@ -1,26 +1,26 @@
-import ThemeToggle from '@/components/ThemeToggle'
+import IconsSection from '@/components/sections/IconsSection'
 
 /* ─── Shared SVG icons ────────────────────────────────────────────────────── */
-const IconPlus    = () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-const IconSearch  = () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-const IconDots    = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
-const IconTrash   = () => <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6"/></svg>
-const IconCheck   = () => <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"/></svg>
-const IconWarn    = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-const IconInfo    = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-const IconCircle  = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-const IconClose   = () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-const IconUp      = () => <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="18 15 12 9 6 15"/></svg>
-const IconDown    = () => <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-const IconRemove  = () => <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-const IconEmail   = () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-const IconDoc     = () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+const IconPlus      = () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+const IconSearch    = () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+const IconDots      = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+const IconTrash     = () => <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6"/></svg>
+const IconCheck     = () => <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"/></svg>
+const IconWarn      = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+const IconInfo      = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+const IconCircle    = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+const IconClose     = () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+const IconUp        = () => <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+const IconDown      = () => <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+const IconRemove    = () => <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+const IconEmail     = () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+const IconDoc       = () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
 const IconBroadcast = () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
 
-/* ─── Section wrapper ─────────────────────────────────────────────────────── */
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+/* ─── Layout helpers ─────────────────────────────────────────────────────── */
+function Section({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
   return (
-    <section style={{ marginBottom: 'var(--space-12)' }}>
+    <section id={id} style={{ marginBottom: 'var(--space-12)', scrollMarginTop: 'var(--space-8)' }}>
       <div style={{
         fontSize: 'var(--text-xs)', fontWeight: 'var(--weight-semi)',
         letterSpacing: '0.12em', textTransform: 'uppercase',
@@ -61,25 +61,10 @@ function Grid({ cols = 2, children }: { cols?: number; children: React.ReactNode
 /* ─── Page ───────────────────────────────────────────────────────────────── */
 export default function Page() {
   return (
-    <div style={{ maxWidth: 1160, margin: '0 auto', padding: 'var(--space-8) var(--space-6)' }}>
+    <div style={{ maxWidth: 900, padding: 'var(--space-10) var(--space-8)' }}>
 
-      {/* Header */}
-      <header style={{
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        marginBottom: 'var(--space-12)', paddingBottom: 'var(--space-8)',
-        borderBottom: '1px solid var(--color-border)',
-      }}>
-        <div>
-          <div style={{ fontSize: 'var(--text-2xl)', fontWeight: 'var(--weight-bold)', letterSpacing: '-0.02em', color: 'var(--color-yellow)' }}>
-            UPROFIT <span style={{ color: 'var(--color-text-primary)' }}>Design System</span>
-          </div>
-          <div className="t-body-sm t-secondary" style={{ marginTop: 6 }}>Operations UI · v1.0</div>
-        </div>
-        <ThemeToggle />
-      </header>
-
-      {/* ── Colors ─────────────────────────────────────────────────── */}
-      <Section title="Color Palette">
+      {/* ── Colors ──────────────────────────────────────────────────── */}
+      <Section id="colors" title="Color Palette">
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--space-4)' }}>
           {[
             { name: 'Base',      hex: '#101217' },
@@ -103,7 +88,7 @@ export default function Page() {
       </Section>
 
       {/* ── Typography ──────────────────────────────────────────────── */}
-      <Section title="Typography · Space Grotesk">
+      <Section id="typography" title="Typography · Space Grotesk">
         <Col gap="var(--space-5)">
           {[
             { label: 'Display / 64px / 700', cls: 't-display', text: 'UPROFIT' },
@@ -127,8 +112,46 @@ export default function Page() {
         </Col>
       </Section>
 
+      {/* ── Spacing & Radius (Token Reference) ──────────────────────── */}
+      <Section id="spacing" title="Spacing & Radius">
+        <Grid cols={2}>
+          <div>
+            <SubLabel>Spacing</SubLabel>
+            <table className="token-table">
+              <thead><tr><th>Token</th><th>Value</th></tr></thead>
+              <tbody>
+                {[['--space-1','4px'],['--space-2','8px'],['--space-3','12px'],['--space-4','16px'],['--space-5','20px'],['--space-6','24px'],['--space-8','32px'],['--space-10','40px'],['--space-12','48px'],['--space-16','64px']].map(([t,v]) => (
+                  <tr key={t}><td>{t}</td><td>{v}</td></tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <SubLabel>Border Radius</SubLabel>
+            <table className="token-table">
+              <thead><tr><th>Token</th><th>Value</th></tr></thead>
+              <tbody>
+                {[['--radius-sm','4px'],['--radius-md','8px'],['--radius-lg','12px'],['--radius-xl','16px'],['--radius-full','9999px']].map(([t,v]) => (
+                  <tr key={t}><td>{t}</td><td>{v}</td></tr>
+                ))}
+              </tbody>
+            </table>
+            <div style={{ marginTop: 'var(--space-5)' }}>
+              <SubLabel>Motion</SubLabel>
+              <table className="token-table">
+                <thead><tr><th>Token</th><th>Value</th></tr></thead>
+                <tbody>
+                  <tr><td>--duration</td><td>160ms</td></tr>
+                  <tr><td>--ease</td><td>cubic-bezier(0.16,1,0.3,1)</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </Grid>
+      </Section>
+
       {/* ── Buttons ─────────────────────────────────────────────────── */}
-      <Section title="Buttons">
+      <Section id="buttons" title="Buttons">
         <Col>
           <SubLabel>Variants</SubLabel>
           <Row>
@@ -139,14 +162,12 @@ export default function Page() {
             <button className="btn btn-success btn-md">Success</button>
             <button className="btn btn-primary btn-md" disabled>Disabled</button>
           </Row>
-
           <SubLabel>Sizes</SubLabel>
           <Row style={{ alignItems: 'flex-end' }}>
             <button className="btn btn-primary btn-sm">Small</button>
             <button className="btn btn-primary btn-md">Medium</button>
             <button className="btn btn-primary btn-lg">Large</button>
           </Row>
-
           <SubLabel>With icons</SubLabel>
           <Row>
             <button className="btn btn-primary btn-md"><IconPlus /> Add Client</button>
@@ -158,7 +179,7 @@ export default function Page() {
       </Section>
 
       {/* ── Badges ──────────────────────────────────────────────────── */}
-      <Section title="Badges">
+      <Section id="badges" title="Badges & Status">
         <Col>
           <SubLabel>Status</SubLabel>
           <Row>
@@ -170,7 +191,6 @@ export default function Page() {
             <span className="badge badge-pink">VIP</span>
             <span className="badge badge-muted">Inactive</span>
           </Row>
-
           <SubLabel>KYC Status</SubLabel>
           <Row>
             <span className="badge badge-kyc-approved"><IconCheck /> Approved</span>
@@ -183,7 +203,7 @@ export default function Page() {
       </Section>
 
       {/* ── Forms ───────────────────────────────────────────────────── */}
-      <Section title="Form Controls">
+      <Section id="forms" title="Inputs & Forms">
         <Grid cols={2}>
           <Col>
             <div className="form-group">
@@ -230,100 +250,49 @@ export default function Page() {
               <div className="form-hint" style={{ color: 'var(--color-orange)' }}>This field is required.</div>
             </div>
             <div className="form-group">
-              <label className="form-label">Disabled</label>
-              <input className="input" type="text" placeholder="Disabled input" disabled />
+              <label className="form-label">Chips</label>
+              <Row>
+                <span className="chip active">All</span>
+                <span className="chip">Active</span>
+                <span className="chip">Pending</span>
+                <span className="chip">VIP <span className="chip-remove"><IconRemove /></span></span>
+              </Row>
+            </div>
+            <div className="form-group">
+              <label className="form-label">Toggles</label>
+              <Col gap="var(--space-2)">
+                <label className="toggle-wrap">
+                  <input className="toggle" type="checkbox" defaultChecked />
+                  <span className="toggle-label">Notifications enabled</span>
+                </label>
+                <label className="toggle-wrap">
+                  <input className="toggle" type="checkbox" />
+                  <span className="toggle-label">Two-factor auth</span>
+                </label>
+              </Col>
             </div>
           </Col>
         </Grid>
       </Section>
 
-      {/* ── Chips & Toggles ─────────────────────────────────────────── */}
-      <Section title="Chips & Toggles">
-        <Col>
-          <SubLabel>Chips</SubLabel>
-          <Row>
-            <span className="chip active">All</span>
-            <span className="chip">Active</span>
-            <span className="chip">Pending</span>
-            <span className="chip">Suspended</span>
-            <span className="chip">
-              VIP
-              <span className="chip-remove"><IconRemove /></span>
-            </span>
-          </Row>
-
-          <SubLabel>Toggles</SubLabel>
-          <Row>
-            <label className="toggle-wrap">
-              <input className="toggle" type="checkbox" defaultChecked />
-              <span className="toggle-label">Notifications enabled</span>
-            </label>
-            <label className="toggle-wrap">
-              <input className="toggle" type="checkbox" />
-              <span className="toggle-label">Two-factor auth</span>
-            </label>
-            <label className="toggle-wrap">
-              <input className="toggle" type="checkbox" defaultChecked />
-              <span className="toggle-label">Auto-approve</span>
-            </label>
-          </Row>
-        </Col>
-      </Section>
-
-      {/* ── Toasts ──────────────────────────────────────────────────── */}
-      <Section title="Alerts & Toasts">
-        <Col>
-          <div className="toast toast-success">
-            <span className="toast-icon"><IconCheck /></span>
-            <div className="toast-content">
-              <div className="toast-title">Account approved</div>
-              <div className="toast-desc">Client has been verified and activated.</div>
-            </div>
-          </div>
-          <div className="toast toast-warning">
-            <span className="toast-icon"><IconWarn /></span>
-            <div className="toast-content">
-              <div className="toast-title">KYC review required</div>
-              <div className="toast-desc">Documents need manual verification.</div>
-            </div>
-          </div>
-          <div className="toast toast-error">
-            <span className="toast-icon"><IconCircle /></span>
-            <div className="toast-content">
-              <div className="toast-title">Transaction failed</div>
-              <div className="toast-desc">Insufficient balance. Please review.</div>
-            </div>
-          </div>
-          <div className="toast toast-info">
-            <span className="toast-icon"><IconInfo /></span>
-            <div className="toast-content">
-              <div className="toast-title">System maintenance</div>
-              <div className="toast-desc">Scheduled downtime on Sunday 02:00 UTC.</div>
-            </div>
-          </div>
-        </Col>
-      </Section>
-
-      {/* ── Cards & Stats ────────────────────────────────────────────── */}
-      <Section title="Cards & Stat Cards">
+      {/* ── Cards ───────────────────────────────────────────────────── */}
+      <Section id="cards" title="Cards">
         <div className="stat-grid" style={{ marginBottom: 'var(--space-5)' }}>
           {[
-            { label: 'Total AUM',       value: '$4.2M',  delta: '+12.4%',        dir: 'up' as const },
-            { label: 'Active Clients',  value: '1,248',  delta: '+34 this week',  dir: 'up' as const },
+            { label: 'Total AUM',       value: '$4.2M',  delta: '+12.4%',           dir: 'up'   as const },
+            { label: 'Active Clients',  value: '1,248',  delta: '+34 this week',     dir: 'up'   as const },
             { label: 'Pending KYC',     value: '87',     delta: '-5 from yesterday', dir: 'down' as const },
-            { label: 'Monthly Revenue', value: '$182K',  delta: '+8.1%',          dir: 'up' as const },
+            { label: 'Monthly Revenue', value: '$182K',  delta: '+8.1%',             dir: 'up'   as const },
           ].map(({ label, value, delta, dir }) => (
             <div key={label} className="stat-card">
               <div className="stat-label">{label}</div>
               <div className="stat-value">{value}</div>
               <span className={`stat-delta ${dir}`}>
-                {dir === 'up' ? <IconUp /> : <IconDown />}
-                {delta}
+                {dir === 'up' ? <IconUp /> : <IconDown />}{delta}
               </span>
             </div>
           ))}
         </div>
-
         <Grid cols={2}>
           <div className="card">
             <div className="card-header">
@@ -332,12 +301,12 @@ export default function Page() {
             </div>
             <Col gap="var(--space-2)">
               {[
-                { initials: 'JD', name: 'James Doe',    email: 'james@example.com',  badgeCls: 'badge-kyc-approved', status: 'Approved', avatarStyle: {} },
-                { initials: 'AM', name: 'Anna Martinez', email: 'anna@example.com',  badgeCls: 'badge-kyc-pending',  status: 'Pending',  avatarStyle: { background: 'rgba(97,75,251,0.15)', color: 'var(--color-purple)' } },
-                { initials: 'RK', name: 'Ryan Kim',      email: 'ryan@example.com',  badgeCls: 'badge-kyc-review',   status: 'Review',   avatarStyle: { background: 'rgba(111,202,239,0.15)', color: 'var(--color-cyan)' } },
-              ].map(({ initials, name, email, badgeCls, status, avatarStyle }) => (
+                { initials: 'JD', name: 'James Doe',     email: 'james@example.com', badgeCls: 'badge-kyc-approved', status: 'Approved', style: {} },
+                { initials: 'AM', name: 'Anna Martinez',  email: 'anna@example.com',  badgeCls: 'badge-kyc-pending',  status: 'Pending',  style: { background: 'rgba(97,75,251,0.15)', color: 'var(--color-purple)' } },
+                { initials: 'RK', name: 'Ryan Kim',       email: 'ryan@example.com',  badgeCls: 'badge-kyc-review',   status: 'Review',   style: { background: 'rgba(111,202,239,0.15)', color: 'var(--color-cyan)' } },
+              ].map(({ initials, name, email, badgeCls, status, style }) => (
                 <div key={name} className="client-card">
-                  <div className="client-avatar" style={avatarStyle}>{initials}</div>
+                  <div className="client-avatar" style={style}>{initials}</div>
                   <div style={{ flex: 1 }}>
                     <div className="t-body" style={{ fontWeight: 'var(--weight-medium)' }}>{name}</div>
                     <div className="t-body-sm t-muted">{email}</div>
@@ -347,28 +316,196 @@ export default function Page() {
               ))}
             </Col>
           </div>
-
           <div className="card card-accent">
             <div className="card-header">
               <span className="card-title">Quick Actions</span>
             </div>
             <Col gap="var(--space-3)">
-              <button className="btn btn-primary btn-md" style={{ width: '100%', justifyContent: 'flex-start' }}>
-                <IconPlus /> Add New Client
-              </button>
-              <button className="btn btn-secondary btn-md" style={{ width: '100%', justifyContent: 'flex-start' }}>
-                <IconDoc /> Export Report
-              </button>
-              <button className="btn btn-ghost btn-md" style={{ width: '100%', justifyContent: 'flex-start' }}>
-                <IconBroadcast /> Run KYC Batch
-              </button>
+              <button className="btn btn-primary btn-md" style={{ width: '100%', justifyContent: 'flex-start' }}><IconPlus /> Add New Client</button>
+              <button className="btn btn-secondary btn-md" style={{ width: '100%', justifyContent: 'flex-start' }}><IconDoc /> Export Report</button>
+              <button className="btn btn-ghost btn-md" style={{ width: '100%', justifyContent: 'flex-start' }}><IconBroadcast /> Run KYC Batch</button>
             </Col>
           </div>
         </Grid>
       </Section>
 
-      {/* ── Modal ───────────────────────────────────────────────────── */}
-      <Section title="Modal">
+      {/* ── Tables ──────────────────────────────────────────────────── */}
+      <Section id="tables" title="Tables">
+        <div className="ds-table-wrap">
+          <table className="ds-table">
+            <thead>
+              <tr>
+                <th>Client</th>
+                <th>Account ID</th>
+                <th>KYC Status</th>
+                <th>Account</th>
+                <th>Balance</th>
+                <th>P&amp;L Today</th>
+                <th style={{ textAlign: 'right' }}>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* Marco Rivera */}
+              <tr>
+                <td>
+                  <div className="table-client">
+                    <div className="table-avatar">MR</div>
+                    <div>
+                      <div className="table-client-name">Marco Rivera</div>
+                      <div className="table-client-email">marco@email.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span className="table-account-id">ACC-38291</span></td>
+                <td>
+                  <span className="kyc-dot-badge kyc-approved">
+                    <span className="kyc-dot" />Approved
+                  </span>
+                </td>
+                <td><span className="acct-badge acct-funded">Funded</span></td>
+                <td><span className="table-balance">$24,500.00</span></td>
+                <td><span className="table-pnl pos">+$384.20</span></td>
+                <td>
+                  <div className="table-actions">
+                    <button className="btn btn-secondary btn-sm">View</button>
+                    <button className="btn btn-ghost btn-sm btn-icon">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              {/* Sara Lowe */}
+              <tr>
+                <td>
+                  <div className="table-client">
+                    <div className="table-avatar">SL</div>
+                    <div>
+                      <div className="table-client-name">Sara Lowe</div>
+                      <div className="table-client-email">sara@email.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span className="table-account-id">ACC-29104</span></td>
+                <td>
+                  <span className="kyc-dot-badge kyc-pending">
+                    <span className="kyc-dot" />Pending
+                  </span>
+                </td>
+                <td><span className="acct-badge acct-challenge">Challenge</span></td>
+                <td><span className="table-balance">$10,000.00</span></td>
+                <td><span className="table-pnl nil">—</span></td>
+                <td>
+                  <div className="table-actions">
+                    <button className="btn btn-primary btn-sm">Review KYC</button>
+                  </div>
+                </td>
+              </tr>
+              {/* David Jung */}
+              <tr>
+                <td>
+                  <div className="table-client">
+                    <div className="table-avatar">DJ</div>
+                    <div>
+                      <div className="table-client-name">David Jung</div>
+                      <div className="table-client-email">djung@email.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span className="table-account-id">ACC-41820</span></td>
+                <td>
+                  <span className="kyc-dot-badge kyc-review">
+                    <span className="kyc-dot" />In Review
+                  </span>
+                </td>
+                <td><span className="acct-badge acct-funded">Funded</span></td>
+                <td><span className="table-balance">$50,000.00</span></td>
+                <td><span className="table-pnl neg">-$1,240.00</span></td>
+                <td>
+                  <div className="table-actions">
+                    <button className="btn btn-secondary btn-sm">View</button>
+                    <button className="btn btn-ghost btn-sm btn-icon">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              {/* Ana Lima */}
+              <tr>
+                <td>
+                  <div className="table-client">
+                    <div className="table-avatar">AL</div>
+                    <div>
+                      <div className="table-client-name">Ana Lima</div>
+                      <div className="table-client-email">ana@email.com</div>
+                    </div>
+                  </div>
+                </td>
+                <td><span className="table-account-id">ACC-30011</span></td>
+                <td>
+                  <span className="kyc-dot-badge kyc-rejected">
+                    <span className="kyc-dot" />Rejected
+                  </span>
+                </td>
+                <td><span className="acct-badge acct-inactive">Inactive</span></td>
+                <td><span className="table-balance">$0.00</span></td>
+                <td><span className="table-pnl nil">—</span></td>
+                <td>
+                  <div className="table-actions">
+                    <button className="btn btn-danger btn-sm">Details</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        {/* Pagination */}
+        <div className="table-footer">
+          <span className="table-count">Showing 1–4 of 4,821 clients</span>
+          <div className="pagination">
+            <button className="page-btn" disabled>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button className="page-btn active">1</button>
+            <button className="page-btn">2</button>
+            <button className="page-btn">3</button>
+            <span className="page-dots">…</span>
+            <button className="page-btn">482</button>
+            <button className="page-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </Section>
+
+      {/* ── Alerts & Toasts ─────────────────────────────────────────── */}
+      <Section id="alerts" title="Alerts & Toasts">
+        <Col>
+          <div className="toast toast-success">
+            <span className="toast-icon"><IconCheck /></span>
+            <div className="toast-content"><div className="toast-title">Account approved</div><div className="toast-desc">Client has been verified and activated.</div></div>
+          </div>
+          <div className="toast toast-warning">
+            <span className="toast-icon"><IconWarn /></span>
+            <div className="toast-content"><div className="toast-title">KYC review required</div><div className="toast-desc">Documents need manual verification.</div></div>
+          </div>
+          <div className="toast toast-error">
+            <span className="toast-icon"><IconCircle /></span>
+            <div className="toast-content"><div className="toast-title">Transaction failed</div><div className="toast-desc">Insufficient balance. Please review.</div></div>
+          </div>
+          <div className="toast toast-info">
+            <span className="toast-icon"><IconInfo /></span>
+            <div className="toast-content"><div className="toast-title">System maintenance</div><div className="toast-desc">Scheduled downtime on Sunday 02:00 UTC.</div></div>
+          </div>
+        </Col>
+      </Section>
+
+      {/* ── Icons ───────────────────────────────────────────────────── */}
+      <Section id="icons" title="Icons">
+        <IconsSection />
+      </Section>
+
+      {/* ── Modals ──────────────────────────────────────────────────── */}
+      <Section id="modals" title="Modals">
         <div className="modal-demo">
           <div className="modal-header">
             <div>
@@ -380,9 +517,7 @@ export default function Page() {
           <div className="modal-body">
             <div className="toast toast-warning" style={{ marginBottom: 'var(--space-4)' }}>
               <span className="toast-icon"><IconWarn /></span>
-              <div className="toast-content">
-                <div className="toast-title">The client will lose all platform access</div>
-              </div>
+              <div className="toast-content"><div className="toast-title">The client will lose all platform access</div></div>
             </div>
             <Col gap="var(--space-3)">
               <div className="form-group">
@@ -405,44 +540,6 @@ export default function Page() {
             <button className="btn btn-danger btn-md">Suspend Account</button>
           </div>
         </div>
-      </Section>
-
-      {/* ── Token Reference ──────────────────────────────────────────── */}
-      <Section title="Token Reference">
-        <Grid cols={2}>
-          <div>
-            <SubLabel>Spacing</SubLabel>
-            <table className="token-table">
-              <thead><tr><th>Token</th><th>Value</th></tr></thead>
-              <tbody>
-                {[['--space-1','4px'],['--space-2','8px'],['--space-3','12px'],['--space-4','16px'],['--space-5','20px'],['--space-6','24px'],['--space-8','32px'],['--space-10','40px'],['--space-12','48px'],['--space-16','64px']].map(([t,v]) => (
-                  <tr key={t}><td>{t}</td><td>{v}</td></tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div>
-            <SubLabel>Border Radius</SubLabel>
-            <table className="token-table">
-              <thead><tr><th>Token</th><th>Value</th></tr></thead>
-              <tbody>
-                {[['--radius-sm','4px'],['--radius-md','8px'],['--radius-lg','12px'],['--radius-xl','16px'],['--radius-full','9999px']].map(([t,v]) => (
-                  <tr key={t}><td>{t}</td><td>{v}</td></tr>
-                ))}
-              </tbody>
-            </table>
-            <div style={{ marginTop: 'var(--space-5)' }}>
-              <SubLabel>Motion</SubLabel>
-              <table className="token-table">
-                <thead><tr><th>Token</th><th>Value</th></tr></thead>
-                <tbody>
-                  <tr><td>--duration</td><td>160ms</td></tr>
-                  <tr><td>--ease</td><td>cubic-bezier(0.16,1,0.3,1)</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </Grid>
       </Section>
 
     </div>
