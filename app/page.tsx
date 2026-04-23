@@ -51,17 +51,13 @@ function Col({ children, gap = 'var(--space-3)' }: { children: React.ReactNode; 
 }
 
 function Grid({ cols = 2, children }: { cols?: number; children: React.ReactNode }) {
-  return (
-    <div style={{ display: 'grid', gridTemplateColumns: `repeat(${cols}, 1fr)`, gap: 'var(--space-5)' }}>
-      {children}
-    </div>
-  )
+  return <div className={`ds-grid ds-grid-${cols}`}>{children}</div>
 }
 
 /* ─── Page ───────────────────────────────────────────────────────────────── */
 export default function Page() {
   return (
-    <div style={{ maxWidth: 900, padding: 'var(--space-10) var(--space-8)' }}>
+    <div className="page-content">
 
       {/* ── Colors ──────────────────────────────────────────────────── */}
       <Section id="colors" title="Color Palette">

@@ -62,14 +62,14 @@ export default function IconsSection() {
       {/* Style Variants */}
       <div>
         <div className="icon-sub-label">Style Variants</div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-4)' }}>
+        <div className="icon-variants-grid">
           {/* Line */}
           <div className="icon-variant-card">
             <div className="icon-variant-header">
               <span className="icon-variant-label">LINE</span>
               <span className="icon-variant-pill">UIL</span>
             </div>
-            <div style={{ display: 'flex', gap: 'var(--space-5)', alignItems: 'center', padding: 'var(--space-4) 0' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--space-5)', alignItems: 'center', padding: 'var(--space-4) 0' }}>
               <UilUser size="28" color="currentColor" />
               <UilShieldCheck size="28" color="currentColor" />
               <UilChartLine size="28" color="currentColor" />
@@ -86,7 +86,7 @@ export default function IconsSection() {
               <span className="icon-variant-label">SOLID</span>
               <span className="icon-variant-pill">UIS</span>
             </div>
-            <div style={{ display: 'flex', gap: 'var(--space-5)', alignItems: 'center', padding: 'var(--space-4) 0' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--space-5)', alignItems: 'center', padding: 'var(--space-4) 0' }}>
               <UisCheckCircle size="28" color="currentColor" />
             </div>
             <p className="icon-variant-desc">Use for active states, status indicators, and emphasis.</p>
@@ -97,7 +97,7 @@ export default function IconsSection() {
       {/* Icon Sizes */}
       <div>
         <div className="icon-sub-label">Icon Sizes</div>
-        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 'var(--space-8)', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 'var(--space-5)', flexWrap: 'wrap' }}>
           {[
             { size: 14, label: '14px', sub: 'xs' },
             { size: 16, label: '16px', sub: 'sm' },
