@@ -96,7 +96,7 @@
   transition: background var(--duration) var(--ease);
   flex-shrink: 0;
 }
-.sidebar-toggle-pill.on { background: var(--color-yellow); }
+.sidebar-toggle-pill.on { background: var(--color-green); }
 
 .sidebar-toggle-thumb {
   position: absolute;
@@ -412,14 +412,14 @@ body {
 .badge-green  { background: rgba(135,222,134,0.12); color: var(--color-green);  border-color: rgba(135,222,134,0.22); }
 .badge-red    { background: rgba(223,86,20,0.15);   color: var(--color-orange); border-color: rgba(223,86,20,0.25); }
 .badge-cyan   { background: rgba(111,202,239,0.12); color: var(--color-cyan);   border-color: rgba(111,202,239,0.22); }
-.badge-purple { background: rgba(97,75,251,0.15);   color: var(--color-purple); border-color: rgba(97,75,251,0.25); }
+.badge-purple { background: rgba(227,126,232,0.12); color: var(--color-pink);   border-color: rgba(227,126,232,0.22); }
 .badge-pink   { background: rgba(227,126,232,0.12); color: var(--color-pink);   border-color: rgba(227,126,232,0.22); }
 .badge-muted  { background: var(--color-surface-2); color: var(--color-text-secondary); border-color: var(--color-border); }
 
 .badge-kyc-approved { background: rgba(135,222,134,0.12); color: var(--color-green);  border-color: rgba(135,222,134,0.22); }
 .badge-kyc-pending  { background: rgba(252,188,17,0.15);  color: var(--color-yellow); border-color: rgba(252,188,17,0.25); }
 .badge-kyc-rejected { background: rgba(223,86,20,0.15);   color: var(--color-orange); border-color: rgba(223,86,20,0.25); }
-.badge-kyc-review   { background: rgba(97,75,251,0.15);   color: var(--color-purple); border-color: rgba(97,75,251,0.25); }
+.badge-kyc-review   { background: rgba(227,126,232,0.12); color: var(--color-pink);   border-color: rgba(227,126,232,0.22); }
 .badge-kyc-none     { background: var(--color-surface-2); color: var(--color-text-muted); border-color: var(--color-border); }
 
 /* ─── Cards ──────────────────────────────────────────────────────────────── */
@@ -527,7 +527,7 @@ body {
   transition: transform var(--duration) var(--ease);
   box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
-.toggle:checked { background: var(--color-yellow); }
+.toggle:checked { background: var(--color-green); }
 .toggle:checked::after { transform: translateX(16px); }
 .toggle:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
 
@@ -653,8 +653,8 @@ body {
 .kyc-pending  { background: rgba(252,188,17,0.10);  color: var(--color-yellow); border-color: rgba(252,188,17,0.22); }
 .kyc-pending .kyc-dot  { background: var(--color-yellow); box-shadow: 0 0 0 2px rgba(252,188,17,0.30); }
 
-.kyc-review   { background: rgba(111,202,239,0.10); color: var(--color-cyan);   border-color: rgba(111,202,239,0.22); }
-.kyc-review .kyc-dot   { background: var(--color-cyan); box-shadow: 0 0 0 2px rgba(111,202,239,0.30); }
+.kyc-review   { background: rgba(227,126,232,0.10); color: var(--color-pink);   border-color: rgba(227,126,232,0.22); }
+.kyc-review .kyc-dot   { background: var(--color-pink);   box-shadow: 0 0 0 2px rgba(227,126,232,0.30); }
 
 .kyc-rejected { background: rgba(223,86,20,0.10);   color: var(--color-orange); border-color: rgba(223,86,20,0.22); }
 .kyc-rejected .kyc-dot { background: var(--color-orange); box-shadow: 0 0 0 2px rgba(223,86,20,0.30); }

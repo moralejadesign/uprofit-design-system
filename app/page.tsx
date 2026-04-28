@@ -298,8 +298,8 @@ export default function Page() {
             <Col gap="var(--space-2)">
               {[
                 { initials: 'JD', name: 'James Doe',     email: 'james@example.com', badgeCls: 'badge-kyc-approved', status: 'Approved', style: {} },
-                { initials: 'AM', name: 'Anna Martinez',  email: 'anna@example.com',  badgeCls: 'badge-kyc-pending',  status: 'Pending',  style: { background: 'rgba(97,75,251,0.15)', color: 'var(--color-purple)' } },
-                { initials: 'RK', name: 'Ryan Kim',       email: 'ryan@example.com',  badgeCls: 'badge-kyc-review',   status: 'Review',   style: { background: 'rgba(111,202,239,0.15)', color: 'var(--color-cyan)' } },
+                { initials: 'AM', name: 'Anna Martinez',  email: 'anna@example.com',  badgeCls: 'badge-kyc-pending',  status: 'Pending',  style: { background: 'rgba(227,126,232,0.15)', color: 'var(--color-pink)' } },
+                { initials: 'RK', name: 'Ryan Kim',       email: 'ryan@example.com',  badgeCls: 'badge-kyc-review',   status: 'Review',   style: { background: 'rgba(227,126,232,0.15)',  color: 'var(--color-pink)' } },
               ].map(({ initials, name, email, badgeCls, status, style }) => (
                 <div key={name} className="client-card">
                   <div className="client-avatar" style={style}>{initials}</div>
