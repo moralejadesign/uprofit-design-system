@@ -84,7 +84,7 @@ export default function Page() {
       </Section>
 
       {/* ── Typography ──────────────────────────────────────────────── */}
-      <Section id="typography" title="Typography · Space Grotesk">
+      <Section id="typography" title="Typography · NB International Pro">
         <Col gap="var(--space-5)">
           {[
             { label: 'Display / 64px / 700', cls: 't-display', text: 'UPROFIT' },
